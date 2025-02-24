@@ -1,0 +1,30 @@
+/*Contacto*/
+.contacto-form {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fec007;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #cc9b07;
+}
+
+h5 {
+  color: white;
+}
+
+.footer i {
+  padding: 7px;
+  font-size: 1.4rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.footer i:hover {
+  cursor: pointer;
+  background-color: #fec007;
+}

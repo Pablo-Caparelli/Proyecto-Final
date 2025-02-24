@@ -10,7 +10,7 @@ const Layout = (props) => {
         <nav>
           <ul>
             <li>
-              <Link to="/ContenidoEstatico">Contenido Estático</Link>
+              <Link to="/">Contenido Estático</Link>
             </li>
             <li>
               <Link to="/DatosAPI">Datos API</Link>
@@ -22,7 +22,7 @@ const Layout = (props) => {
         </nav>
       </header>
       <main>
-        {/* {props.nombre && <h1>Hola {props.nombre}</h1>} */}
+        {props.nombre && <h1>Hola {props.nombre}</h1>}
         {props.children}
       </main>
       <footer class="bg-info text-center text-white p-5">

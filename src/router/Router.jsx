@@ -8,7 +8,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         {/* Para cada ruta defino el path y la vista */}
-        <Route path="/ContenidoEstatico" element={<ContenidoEstatico />} />
+        <Route path="/" element={<ContenidoEstatico />} />
         <Route path="/DatosAPI" element={<DatosAPI />} />
         <Route path="/Contacto" element={<Contacto />} />
       </Routes>
