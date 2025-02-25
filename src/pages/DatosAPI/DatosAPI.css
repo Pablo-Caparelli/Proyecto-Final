@@ -1,18 +1,19 @@
 /* Contenedor de las tarjetas en grilla */
 .pokemon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Tarjeta individual de cada Pokémon */
 .card {
-  background: white;
+  background: rgb(6, 233, 184);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgb(3, 180, 71);
   padding: 15px;
+  margin: 10px;
   text-align: center;
   transition: transform 0.2s ease-in-out;
 }
@@ -22,10 +23,17 @@
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 
 .card h3 {
   text-transform: capitalize;
+}
+
+h1 {
+  color: red;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+  font-size: 5rem;
+  padding-bottom: 20px;
 }

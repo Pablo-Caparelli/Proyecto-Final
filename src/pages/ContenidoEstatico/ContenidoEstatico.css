@@ -1,48 +1,24 @@
-/* navegación */
-#navbar {
-  background: #000;
-  color: #fff;
-  overflow: auto;
-  /* para que no salgan barras de scroll
-    si el contenedor se desborda  */
-}
-
-#navbar a {
-  color: white;
-}
-
-#navbar h1 {
-  float: left;
-  /* para que flote a la izquierda */
-  padding-top: 20px;
-  /* para margin interior por arriba  */
-}
-
-#navbar ul {
-  list-style: none;
-  /* quitar bolitas de enumeración */
-  float: right;
-}
-
-#navbar ul li {
-  float: left;
-  /* para posicionar inicio, empresa y contacto uno al lado del otro */
-}
-
-#navbar ul li a {
-  display: block;
-  padding: 20px;
-  text-align: center;
-}
-
-#navbar ul li a:hover,
-#navbar ul li a.current {
-  background: #1ddd95;
-  color: #000;
-  /* la clase current viene a ser el botón actual */
-}
-
 /* api: jsonplaceholder.typicode.com */
 /* api de pokemon: https://pokeapi.co/ */
 /* api:  github.com/public-apis/public-apis*/
 /* Auth: no, quiere decir que es gratis */
+
+.fondo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/fondo-pintura.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  text-decoration: underline;
+  font-size: 3rem;
+  color: rgb(0, 255, 200);
+  text-align: center;
+}

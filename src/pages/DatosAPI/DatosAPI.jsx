@@ -22,8 +22,8 @@ const DatosAPI = () => {
 
   return (
     <Layout>
-      <h1 className="card">Pokemones Cards</h1>
-      <div>
+      <h1>Pokemons Cards</h1>
+      <div className="pokemon-grid">
         {pokemonData.map((pokemon, index) => (
           <PokemonCard key={index} pokemonData={pokemon} />
         ))}
