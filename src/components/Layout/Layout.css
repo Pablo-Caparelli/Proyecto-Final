@@ -45,7 +45,7 @@ footer {
   color: rgb(20, 20, 20);
   background-color: rgb(25, 145, 115);
   width: 100%;
-  height: 15vh;
+  height: 20vh;
 }
 
 .nav-link {
@@ -57,6 +57,7 @@ footer {
 h5 {
   font-size: 2rem;
   text-align: center;
+  padding: 10px 0;
 }
 
 p {
@@ -65,17 +66,17 @@ p {
 }
 
 .social {
-  padding: 7px;
-  font-size: 1.4rem;
-  border: 2px solid rgb(160, 7, 58);
-  border-radius: 50%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 2px solid black;
 }
 
 .social i:hover {
   cursor: pointer;
-  background-color: rgb(255, 0, 55);
+  background-color: rgb(25, 145, 115);
 }
 
 .btn {
-  color: white;
+  color: rgb(20, 20, 20);
+  padding: 20px;
 }
