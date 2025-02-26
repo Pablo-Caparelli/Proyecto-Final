@@ -27,7 +27,7 @@ const ContenidoEstatico = () => {
             />
             <h5 className="card-title">Explorador Urbano</h5>
             <p className="card-text">
-              Con su estilo futurista y su actitud segura, este aventurero de
+              Con su estilo vanguardista y su actitud segura, este aventurero de
               otra especie camina por la ciudad con determinación.
             </p>
           </div>
