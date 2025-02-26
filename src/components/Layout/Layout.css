@@ -7,7 +7,7 @@ header {
 }
 
 header img {
-  width: 120px;
+  width: 100px;
 }
 
 header ul {
@@ -17,17 +17,18 @@ header ul {
 }
 
 header ul li {
-  background-color: rgb(71, 255, 209);
+  font-size: 2rem;
   padding: 10px;
   color: black;
   font-weight: 700;
-  border-radius: 20px;
   cursor: pointer;
   transition: scale 0.2s;
 }
 
 header ul li:hover {
   scale: 1.05;
+  text-decoration: underline;
+  padding: 10px 0;
 }
 
 header a {
@@ -36,36 +37,43 @@ header a {
 }
 
 main {
-  padding: 20px;
   min-height: 100vh;
 }
 
 /* Footer */
 footer {
-  color: white;
+  color: rgb(20, 20, 20);
+  background-color: rgb(25, 145, 115);
+  width: 100%;
+  height: 15vh;
 }
 
-.footer-container {
+.nav-link {
   gap: 60px;
   height: 3rem;
-  color: white;
+  color: rgb(20, 20, 20);
 }
 
-h5 p {
+h5 {
   font-size: 2rem;
-  padding-top: 20px;
+  text-align: center;
 }
 
-.social i {
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.social {
   padding: 7px;
   font-size: 1.4rem;
-  border: 2px solid white;
+  border: 2px solid rgb(160, 7, 58);
   border-radius: 50%;
 }
 
 .social i:hover {
   cursor: pointer;
-  background-color: aqua;
+  background-color: rgb(255, 0, 55);
 }
 
 .btn {

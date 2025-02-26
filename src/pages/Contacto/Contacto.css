@@ -30,7 +30,7 @@
 }
 
 .contacto-form button {
-  background-color: #007bff;
+  background-color: rgb(25, 145, 115);
   color: white;
   padding: 10px;
   border: none;
@@ -45,7 +45,7 @@
 }
 
 h2 {
-  color: blue;
+  color: rgb(44, 119, 100);
   font-size: 3rem;
   text-align: center;
   text-decoration: underline;

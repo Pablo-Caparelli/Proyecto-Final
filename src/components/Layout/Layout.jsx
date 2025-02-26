@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Layout.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 //nombre
 const Layout = (props) => {
   return (
     <>
       <header>
-        <img src="../../public/logo.png" alt="imagen de logo" />
+        <img src="../../public/Pikachu.jpg" alt="imagen de Pikachu" />
         <nav>
           <ul>
             <li>
@@ -34,7 +36,7 @@ const Layout = (props) => {
               href="https://www.facebook.com/profile.php?id=100010941435312&locale=es_LA"
               class="btn"
             >
-              <i class="fab fa-facebook fa-1x" alt="icono de facebook"></i>
+              <i class="fa-brands fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com/pablo_caparelli/" class="btn">
               <i class="fab fa-instagram fa-1x" alt="icono de instagram"></i>
