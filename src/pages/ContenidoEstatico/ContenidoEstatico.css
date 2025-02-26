@@ -7,18 +7,46 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../public/fondo-pintura.jpg");
+  background-image: url("../../../public/imagen4-carrousel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-h1 {
-  display: block;
-  margin: auto;
-  text-decoration: underline;
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
-  color: rgb(0, 255, 200);
+  color: rgb(238, 202, 1);
+}
+
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(238, 202, 1);
+}
+
+.fondo2 {
+  background-color: rgb(233, 240, 173);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+}
+
+.cart {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.card-img-top {
+  width: 250px;
 }

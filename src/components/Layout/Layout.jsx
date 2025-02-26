@@ -35,7 +35,7 @@ const Layout = (props) => {
       </main>
       <footer className="bg-info text-center text-white p-5">
         <div className="nav-link text-white">
-          <h5>Copyright &copy; 2024. Sitio creado por Pablo Caparelli.</h5>
+          <h5>Copyright &copy; 2025. Sitio creado por Pablo Caparelli.</h5>
           <p>Todos los derechos reservados.</p>
           <div className="social">
             <a
