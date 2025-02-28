@@ -9,7 +9,7 @@ const ContenidoEstatico = () => {
       <Layout>
         <div className="fondo">
           <h1 className="titulo">
-            Bienvenidos a mi página de "Contenido Estático"
+            Bienvenidos al Universo Pokemón ("Contenido Estático")
           </h1>
           <p className="subtitulo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
