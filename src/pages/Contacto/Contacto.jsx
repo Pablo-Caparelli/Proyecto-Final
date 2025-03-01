@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Layout } from "../../components/Layout/Layout.jsx";
 import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,17 +10,35 @@ import {
 import "./Contacto.css";
 
 const Contacto = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    mensaje: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value, // Actualiza dinámicamente el campo correspondiente
+    }));
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     Swal.fire({
-      title: "¡Mensaje enviado correctamente!",
-      text: "Gracias por contactarnos, te responderemos a la brevedad",
+      title:
+        "¡Mensaje enviado correctamente! Gracias por contactarnos, te responderemos a la brevedad",
+      html: `<p><strong>Nombre:</strong> ${formData.nombre}</p>
+             <p><strong>Email:</strong> ${formData.email}</p>
+             <p><strong>Mensaje:</strong> ${formData.mensaje}</p>`,
       icon: "success",
       confirmButtonText: "Aceptar",
     });
 
-    event.target.reset(); // Limpia el formulario después de enviarlo
+    // Limpia el formulario restableciendo el estado
+    setFormData({ nombre: "", email: "", mensaje: "" });
   };
 
   return (
@@ -34,6 +53,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Ingrese su nombre"
+          value={formData.nombre} // Enlaza con el estado
+          onChange={handleChange} // Maneja cambios en el input
         />
 
         <label htmlFor="email">Email:</label>
@@ -44,6 +65,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Ingrese su correo electrónico"
+          value={formData.email} // Enlaza con el estado
+          onChange={handleChange} // Maneja cambios en el input
         />
 
         <label htmlFor="mensaje">Mensaje:</label>
@@ -53,6 +76,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Escriba su mensaje por favor"
+          value={formData.mensaje} // Enlaza con el estado
+          onChange={handleChange} // Maneja cambios en el textarea
         ></textarea>
 
         <button type="submit">Enviar</button>
