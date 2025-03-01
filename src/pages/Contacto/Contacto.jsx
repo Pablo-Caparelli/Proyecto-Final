@@ -20,7 +20,7 @@ const Contacto = () => {
     const { name, value } = event.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value, // Actualiza dinámicamente el campo correspondiente
+      [name]: value,
     }));
   };
 

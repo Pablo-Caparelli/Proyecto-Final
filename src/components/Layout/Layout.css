@@ -25,10 +25,25 @@ header ul li {
   transition: scale 0.2s;
 }
 
-header ul li:hover {
+header ul li:hover:nth-child(1) {
   scale: 1.05;
-  text-decoration: underline;
-  padding: 10px 0;
+  padding: 10px 10px;
+  background-color: rgb(95, 207, 20);
+  border-radius: 20px;
+}
+
+header ul li:hover:nth-child(2) {
+  scale: 1.05;
+  padding: 10px 10px;
+  background-color: rgb(235, 6, 6);
+  border-radius: 20px;
+}
+
+header ul li:hover:nth-child(3) {
+  scale: 1.05;
+  padding: 10px 10px;
+  background-color: rgb(207, 20, 167);
+  border-radius: 20px;
 }
 
 header a {
@@ -70,12 +85,19 @@ p {
   padding: 20px;
 }
 
-.social i:hover {
-  cursor: pointer;
-  background-color: rgb(25, 145, 115);
-}
-
 .btn {
   color: rgb(20, 20, 20);
   padding: 20px;
+}
+
+.btn:hover:nth-child(1) {
+  color: rgb(95, 207, 20);
+}
+
+.btn:hover:nth-child(2) {
+  color: rgb(235, 6, 6);
+}
+
+.btn:hover:nth-child(3) {
+  color: rgb(207, 20, 167);
 }
