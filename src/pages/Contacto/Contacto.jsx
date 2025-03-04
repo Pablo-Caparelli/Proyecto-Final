@@ -29,7 +29,7 @@ const Contacto = () => {
 
     Swal.fire({
       title:
-        "¡Mensaje enviado correctamente! Gracias por contactarnos, te responderemos a la brevedad",
+        "¡Mensaje enviado correctamente! Gracias por contactarnos, te responderemos a la brevedad.",
       html: `<p><strong>Nombre:</strong> ${formData.nombre}</p>
              <p><strong>Email:</strong> ${formData.email}</p>
              <p><strong>Mensaje:</strong> ${formData.mensaje}</p>`,

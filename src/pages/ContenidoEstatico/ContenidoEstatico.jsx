@@ -12,10 +12,9 @@ const ContenidoEstatico = () => {
             Bienvenidos al Universo Pokemón ("Contenido Estático")
           </h1>
           <p className="subtitulo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            tenetur perspiciatis aliquid inventore, officiis numquam veritatis
-            sint maiores a, sunt aspernatur vel iste adipisci reprehenderit quia
-            quae?
+            Explora un mundo lleno de criaturas fascinantes, aventuras épicas y
+            entrenadores decididos en su camino para convertirse en maestros
+            Pokemón.
           </p>
         </div>
         <div className="fondo2">
