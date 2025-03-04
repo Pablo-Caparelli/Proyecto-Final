@@ -35,6 +35,9 @@ const Contacto = () => {
              <p><strong>Mensaje:</strong> ${formData.mensaje}</p>`,
       icon: "success",
       confirmButtonText: "Aceptar",
+      customClass: {
+        confirmButton: "custom-button",
+      },
     });
 
     // Limpia el formulario restableciendo el estado
