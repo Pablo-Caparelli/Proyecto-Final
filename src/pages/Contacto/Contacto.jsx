@@ -40,7 +40,7 @@ const Contacto = () => {
       },
     });
 
-    // Limpia el formulario restableciendo el estado
+    // Limpia el formulario
     setFormData({ nombre: "", email: "", mensaje: "" });
   };
 
@@ -56,8 +56,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Ingrese su nombre"
-          value={formData.nombre} // Enlaza con el estado
-          onChange={handleChange} // Maneja cambios en el input
+          value={formData.nombre}
+          onChange={handleChange}
         />
 
         <label htmlFor="email">Email:</label>
@@ -68,8 +68,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Ingrese su correo electrónico"
-          value={formData.email} // Enlaza con el estado
-          onChange={handleChange} // Maneja cambios en el input
+          value={formData.email}
+          onChange={handleChange}
         />
 
         <label htmlFor="mensaje">Mensaje:</label>
@@ -79,8 +79,8 @@ const Contacto = () => {
           required
           autoComplete="off"
           placeholder="Escriba su mensaje por favor"
-          value={formData.mensaje} // Enlaza con el estado
-          onChange={handleChange} // Maneja cambios en el textarea
+          value={formData.mensaje}
+          onChange={handleChange}
         ></textarea>
 
         <button type="submit">Enviar</button>
